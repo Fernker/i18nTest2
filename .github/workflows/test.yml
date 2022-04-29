@@ -3,6 +3,10 @@ on:
   repository_dispatch:
     types: [my-event]
   workflow_dispatch:
+    inputs:
+      message:
+        description: name of package to update (canvas, api1, etc)
+        required: true
     
 jobs:
   myEvent:
