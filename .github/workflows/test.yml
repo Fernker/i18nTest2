@@ -2,6 +2,8 @@ name: Repo Dispatch
 on:
   repository_dispatch:
     types: [my-event]
+  workflow_dispatch:
+    
 jobs:
   myEvent:
     runs-on: ubuntu-latest
